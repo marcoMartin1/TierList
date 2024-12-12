@@ -1,8 +1,11 @@
-.content-title{
-    font-size: 100px;
+.content-title {
+    font-size: 25px;
     width: 100%;
     padding: 20px;
+    text-align: center;
+    margin-top: 60px; /* Push the title below the navbar */
 }
+
 
 
 .grid-container {
