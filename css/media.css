@@ -1,0 +1,68 @@
+/* media queries */
+
+
+
+
+
+
+/* laptop */
+@media  (max-width : 1366px){
+    html{
+        font-size: 100%;
+    }
+}
+
+/* tablet */
+
+@media  (max-width : 768px){
+    html{
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+
+    .navbar .navbar-tab{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(1, 1, 1 , 0.8);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    /* supaya dari kanan muncul sidebarnya kelas aktif datang dari js intinya saat diclick bakal muncul  sidebar dari kiri   */
+
+    .navbar .navbar-tab.active{
+        right: 0;
+    }
+
+    .navbar .navbar-tab a{
+        display: block;
+        margin: 1.5rem;
+        padding:  0.5rem
+    }
+
+    .navbar .navbar-tab a::after{
+        transform-origin: 0 0 ;    
+    }
+    .navbar .navbar-tab a:hover::after{
+        transform: scaleX(0.2) 
+    }
+
+
+}
+
+/* phone */
+@media  (max-width : 450px){
+    html{
+        font-size: 55%;
+    }
+
+    .image-hero{
+        max-width: 70%;
+        min-width: 40%;
+    }
+}

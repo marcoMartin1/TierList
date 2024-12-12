@@ -1,0 +1,99 @@
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1 , 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    font-style: italic;
+
+}
+
+
+
+.navbar .navbar-logo span{
+    color: rgb(255, 66, 66);
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.navbar .navbar-tab a{
+    color: #fff;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin: 0 2rem;
+}
+
+
+.navbar .navbar-tab .navbar-tab-items{
+    display: inline-block;
+ 
+}
+
+.navbar .extra-navbar a {
+    font-size: 2rem;
+    color: red;
+}
+
+
+
+
+/* effect on hover */
+
+.navbar .navbar-tab a:hover{
+    color: rgb(255, 66, 66);
+    /* transition: 0.5s ease-in-out; */
+   
+   
+}
+
+.navbar .navbar-tab a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(255, 66, 66);
+    /* scalex 0 awalnya ga keliatan  */
+    transform: scaleX(0);  
+    transition: 0.1s linear;
+}
+
+.navbar .navbar-tab a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .extra-navbar a {
+color: #fff;
+margin: 0 0.3rem;
+
+}
+
+.navbar .extra-navbar a:hover{
+color: rgb(255, 66, 66);
+}
+
+.navbar .extra-navbar .menu {
+    margin-left: 1rem;
+    margin-right: 0 ;
+    font-size: 0.5rem;
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+

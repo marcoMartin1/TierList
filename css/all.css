@@ -1,0 +1,39 @@
+:root{
+    --primary : rgb(83, 59, 59);
+    --secondary : blue;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        list-style: none;
+        
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        font-family: 'Poppins' , sans-serif;
+        background-color: black;
+        color: white;
+        height: 9000px;
+
+    
+        
+    }
+
+    .dark-mode-variables{
+        --color-background: #181a1e;
+        --color-white: #202528;
+        --color-dark: #edeffd;
+        --color-dark-variant: #a3bdcc;
+        --color-light: rgba(0, 0, 0, 0.4);
+        --box-shadow: 0 2rem 3rem var(--color-light);
+    }
+
