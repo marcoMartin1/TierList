@@ -9,8 +9,8 @@
 
 
 .grid-container {
-    /* max-width: 1200px; */
-    margin: 0 ;
+    max-width: 800px;
+    margin: 0 auto ;
     padding: 20px;
     width: 100%;
 }
@@ -39,6 +39,7 @@
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.7);
 }
 
 .filter-buttons button:hover {
@@ -63,12 +64,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-row: span 1; /* Automatically spans the height of the row */
+    grid-row: 1; /* Automatically spans the height of the row */
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
 }
 
