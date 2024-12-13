@@ -42,7 +42,8 @@
     .navbar .navbar-tab a{
         display: block;
         margin: 1.5rem;
-        padding:  0.5rem
+        padding:  0.5rem;
+        font-size: 20px;
     }
 
     .navbar .navbar-tab a::after{
@@ -56,8 +57,9 @@
 }
 
 /* phone */
+/* diatas width ini  ga berlaku */
 
-@media (max-width: 480px) {
+@media (max-width: 426px) {
     html {
         font-size: 50%; /* Smaller font size for compact screens */
     }
@@ -68,18 +70,25 @@
         margin: 0.5rem 0;
     }
 
+    .navbar .navbar-tab a{
+        display: block;
+        margin: 1.5rem;
+        padding:  0.5rem;
+        font-size: 15px;
+    }
+
     .content-title {
         font-size: 1.8rem; /* Adjust title size */
         margin-top: 80px;
     }
 
     .grid-container {
-        padding: 10px;
+        padding: 20px;
         max-width: 100%; /* Full width for small screens */
     }
 
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); /* Smaller cards */
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /* Smaller cards */
         gap: 10px;
     }
 
@@ -89,8 +98,10 @@
     }
 
     .filters {
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
         justify-content: center;
     }
 
@@ -100,11 +111,25 @@
     }
 
     footer {
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
         text-align: center;
+        flex-wrap: wrap;
     }
+
+    
 
     .footer-content {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .links{
+        padding-left: 30%;
+    }
+
+    .social{
+        padding-left: 30%;
     }
 }
