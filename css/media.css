@@ -21,7 +21,7 @@
 
 /* tablet */
 
-@media  (max-width : 768px){
+@media  (max-width: 799px ){
     html{
         font-size: 62.5%;
     }
@@ -30,14 +30,17 @@
         display: inline-block;
     }
 
-    .filters {
-        display: flex;
-       align-items: start;
-        flex-direction: column;
-        gap: 20px; /* Increase the gap between buttons */
-        margin-bottom: 20px;
-        justify-content: start; /* Center-align the buttons */
+    .filters{
+        width: 100%;
+
     }
+
+    .search-bar {
+        width: 100%;
+      
+    }
+
+  
 
     .navbar .navbar-tab{
         position: absolute;
@@ -70,15 +73,21 @@
     }
 
 
+    
+
+   
+
+
 }
 
 /* phone */
 /* diatas width ini  ga berlaku */
 
 
-@media (max-width: 440px) {
+@media (max-width: 460px )  {
+    
     html {
-        font-size: 50%; /* Smaller font size for compact screens */
+        font-size: 60%; /* Smaller font size for compact screens */
     }
 
    
@@ -128,7 +137,6 @@
 
         /* Grid layout for cards */
         .grid {
-            grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
             gap: 5px; /* Reduced spacing between cards */
         }
     
@@ -188,10 +196,30 @@
         flex-wrap: wrap;
     }
 
+    footer .footer-content{
+        line-height: 1.2;
+    }
+
+    .footer-section h3 {
+        font-size: 2rem; /* Reduced from 8rem */
+    }
+
+    .footer-section p {
+        font-size: 1.2rem; /* Reduced from 2.9rem */
+        line-height: 1.4; /* Improved line spacing */
+    }
+
+    .footer-section a {
+        font-size: 1.8rem;
+        margin-bottom: 3px;
+    }
+    
+
+    
     
 
     .footer-content {
-        font-size: 2em;
+        
         flex-direction: column;
         gap: 1rem;
     }
@@ -202,5 +230,15 @@
 
     .social{
         padding-left: 30%;
+    }
+}
+
+
+
+@media (min-width: 300px) and (max-width:460px) {
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+
+
     }
 }

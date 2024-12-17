@@ -12,21 +12,25 @@
 
 .filters {
     display: flex;
-    align-items: start;
+    
+    align-items: center;
+    width: 100%;
     gap: 20px;
     margin-bottom: 20px;
     justify-content: center;
+    padding: 0 10px;
 }
 
 .search-bar {
+    width: 20%;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    width: 200px;
+   
     border: 1px solid;
 }
 
-.filter-buttons button {
+/* .filter-buttons button {
     padding: 10px 15px;
     border: none;
     gap: 20px;
@@ -39,7 +43,7 @@
 
 .filter-buttons button:hover {
     background-color: #777;
-}
+} */
 
 
 .grid-container {
@@ -52,6 +56,8 @@
 
 .tier-section {
     display: grid;
+
+    /* ini buat yang pc bagus kalo pake columns */
     /* grid-template-columns: 150px 1fr; Fixed width for the label, flexible width for the grid */
     gap: 20px;
     margin-bottom: 20px;
@@ -104,8 +110,9 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
     gap: 20px;
+    
 }
 
 .card {
