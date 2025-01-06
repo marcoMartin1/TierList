@@ -31,6 +31,9 @@ const navbarlogo = document.querySelector(".navbar .navbar-logo")
 const footer = document.querySelector(".footer-container");
 const footerdescription = document.querySelectorAll(".footer-section p ")
 const footerlinks = document.querySelectorAll(".footer-section a")
+const card = document.querySelectorAll(".card")
+const carddetail = document.querySelectorAll(".card p")
+const footerbottom  = document.querySelector(".footer-bottom")
 
 
 darkMode.addEventListener('click', (event) => {
@@ -62,6 +65,14 @@ darkMode.addEventListener('click', (event) => {
       element.style.backgroundColor = "#eaeaea"
     });
 
+    card.forEach((element)=>{
+      element.style.backgroundColor = "#F8F9FA"
+    })
+
+    carddetail.forEach((element)=>{
+      element.style.color = "#000"
+    })
+
 
     footer.style.backgroundColor = "#eaeaea";
 
@@ -88,6 +99,8 @@ extranavbar.forEach((icon)=>{
 footerlinks.forEach((flinks)=>{
   flinks.style.color = "#000"
 })
+
+footerbottom.style.color = "#000"
 
 
 
@@ -118,6 +131,14 @@ footerlinks.forEach((flinks)=>{
       icon.style.color = "#fff"
     })
 
+    card.forEach((element)=>{
+      element.style.backgroundColor = "#2a2a3c"
+    })
+
+    carddetail.forEach((element)=>{
+      element.style.color = "#ccc"
+    })
+
     navbartab.forEach(element => {
       element.style.backgroundColor = "rgba(1, 1, 1, 0.8)"
     });
@@ -133,6 +154,8 @@ footerlinks.forEach((flinks)=>{
     })
 
 
+
+    footerbottom.style.color = "#aaa"
 
 
 

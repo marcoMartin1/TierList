@@ -120,7 +120,7 @@
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
