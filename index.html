@@ -27,7 +27,7 @@
     <!-- feater icons  -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body>
+  <body class="dark-mode">
     <!-- end feather iocnos -->
 
     <!-- start navbar -->
@@ -44,7 +44,10 @@
 
         <div class="extra-navbar">
           <a href="#" id="search" class="search"
-            ><i data-feather="search"></i
+            ><i data-feather="search" id="theme-icon"></i
+          ></a>
+          <a href="#"
+            ><i data-feather="moon" class="dark" id="theme-icon"></i
           ></a>
           <a href="#" id="hamburger-menu" class="menu"
             ><i data-feather="menu"></i
@@ -63,16 +66,16 @@
         placeholder="Search characters..."
         class="search-bar"
       />
-      <!-- <div class="filter-buttons">
+      <div class="filter-buttons">
         <button>4★</button>
         <button>5★</button>
         <button>Ice</button>
         <button>Fire</button>
         <button>Wind</button>
         <button>Electro</button>
-        <button>Electro</button>
+        <button>Fire</button>
         <button>Reset</button>
-      </div> -->
+      </div>
     </div>
 
     <div class="grid-container">

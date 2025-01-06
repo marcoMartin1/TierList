@@ -22,11 +22,128 @@ document.addEventListener('click' , function(e){
 })
 
 
-const darkMode = document.querySelector('.dark-mode');
+const darkMode = document.querySelector('.dark');
+const extranavbar = document.querySelectorAll(".extra-navbar a")
+const navbartab = document.querySelectorAll(".navbar .navbar-tab")
+const navbar = document.querySelector(".navbar");
+const links = document.querySelectorAll('.navbar-tab a');
+const navbarlogo = document.querySelector(".navbar .navbar-logo")
+const footer = document.querySelector(".footer-container");
+const footerdescription = document.querySelectorAll(".footer-section p ")
+const footerlinks = document.querySelectorAll(".footer-section a")
 
-darkMode.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode-variables');
-    darkMode.querySelector('span:nth-child(1)').classList.toggle('active');
-    darkMode.querySelector('span:nth-child(2)').classList.toggle('active');
+
+darkMode.addEventListener('click', (event) => {
+
+  event.preventDefault();
+
+
+  // Check if it's currently in dark mode
+  const isDarkMode = document.body.classList.contains('dark-mode');
+
+
+
+  if (isDarkMode) {
+
+    //bgnya ubah ke putih
+    
+    // Switch to light mode
+    document.body.classList.remove('dark-mode');
+
+    console.log("remove dark in if")
+
+    document.body.classList.add('light-mode');
+
+    console.log("add light in if")
+
+    navbar.style.backgroundColor = "#eaeaea";
+
+    navbartab.forEach(element => {
+      element.style.backgroundColor = "#eaeaea"
+    });
+
+
+    footer.style.backgroundColor = "#eaeaea";
+
+    footerdescription.forEach((description)=>{
+      description.style.color = "#000"
+    })
+   
+
+    
+    
+
+    // Apply styling to each <a> element
+links.forEach(link => {
+  link.style.color = '#000'; // Change text color to hitam
+ 
+});
+
+navbarlogo.style.color = "#000"
+
+extranavbar.forEach((icon)=>{
+  icon.style.color = "#000"
+})
+
+footerlinks.forEach((flinks)=>{
+  flinks.style.color = "#000"
+})
+
+
+
+
+
+
+  } else {
+    // Switch to dark mode
+    document.body.classList.remove('light-mode');
+
+    console.log("remove light in else")
+
+    document.body.classList.add('dark-mode');
+
+    console.log("add dark in if");
+
+    navbar.style.backgroundColor = " rgba(1, 1, 1 , 0.8)";
+    // links.style.color = "#fff";
+
+    links.forEach(link => {
+      link.style.color = '#fff'; // Change text color to hitam
+     
+    });
+
+    navbarlogo.style.color = "#fff  "
+
+    extranavbar.forEach((icon)=>{
+      icon.style.color = "#fff"
+    })
+
+    navbartab.forEach(element => {
+      element.style.backgroundColor = "rgba(1, 1, 1, 0.8)"
+    });
+
+    footer.style.backgroundColor = " rgba(1, 1, 1, 0.8)";
+
+    footerdescription.forEach((description)=>{
+      description.style.color = "#ccc"
+    })
+
+    footerlinks.forEach((flinks)=>{
+      flinks.style.color = "#ccc"
+    })
+
+
+
+
+
+  
+    
+
+  }
+
+
+
+
+ 
 })
 
